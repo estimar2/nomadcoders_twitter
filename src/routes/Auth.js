@@ -9,6 +9,8 @@ const Auth = () => {
       target: { name, value },
     } = event;
 
+    // console.log(value);
+
     if (name === "email") {
       setEmail(value);
     } else if (name === "password") {
@@ -18,8 +20,6 @@ const Auth = () => {
 
   const onSubmit = (event) => {
     event.preventDefault();
-
-    console.log(event.target.name);
   };
   return (
     <div>
